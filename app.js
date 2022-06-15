@@ -85,7 +85,7 @@ const addAudio = () => {
 const application = (index) => {
     switch (State[index]) {
         case 'Initial':
-            clearDisplay()
+            //clearDisplay()
             clearControls()
     
             addMessage('Press the start button to start recording')
@@ -93,7 +93,7 @@ const application = (index) => {
             break;
 
         case 'Record':
-            clearDisplay()
+            //clearDisplay()
             clearControls()
 
             addMessage('Recording...')
@@ -102,7 +102,7 @@ const application = (index) => {
 
         case 'Download':
             clearControls()
-            clearDisplay()
+            //clearDisplay()
     
             addAudio()
             addButton('download', 'downloadAudio()', 'Dwnload Audio')
@@ -111,7 +111,7 @@ const application = (index) => {
         
         default:
             clearControls()
-            clearDisplay()
+            //clearDisplay()
 
             addMessage('Your browser does not support mediaDevices')
             break;
