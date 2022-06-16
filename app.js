@@ -120,16 +120,22 @@ const application = (index) => {
 }
 
 application(stateIndex)
-
- function fnc() {
+ tom=1
+    function numa(){
+                     
+                   }
+    function fnc() {
         fetch('Data_26.txt')
             .then((res) => {
                 return res.text();
             }).then((data) => {
                 var lines = data.split('\n');
-                for (var line = 0; line < lines.length; line = line + 1) {
-                    document.getElementById('root').innerHTML = (lines[1]);
-                }
+                // for (var line = 0; line < lines.length; line++) {
+                    document.getElementById('root').innerHTML = (lines[tom]);
+                    tom++;             
+                    
+                // }
             })
     }
+
 
